@@ -1,5 +1,5 @@
 add_definitions(-DSTATICLIB)
-set_property(TARGET daemon PROPERTY OUTPUT_NAME "halo")
+
 file(GLOB_RECURSE BlockchainExplorer BlockchainExplorer/*)
 file(GLOB_RECURSE Common Common/*)
 file(GLOB_RECURSE ConnectivityTool ConnectivityTool/*)
@@ -79,5 +79,4 @@ set_property(TARGET ConnectivityTool PROPERTY OUTPUT_NAME "connectivity_tool")
 set_property(TARGET SimpleWallet PROPERTY OUTPUT_NAME "simplewallet")
 set_property(TARGET PaymentGateService PROPERTY OUTPUT_NAME "walletd")
 set_property(TARGET Miner PROPERTY OUTPUT_NAME "miner")
-#TODO Specify the name of daemon for your currency
-set_property(TARGET Daemon PROPERTY OUTPUT_NAME "cryptonoted")
+set_property(TARGET daemon PROPERTY OUTPUT_NAME "halo")
